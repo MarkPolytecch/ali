@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кітаптар туралы</title>
+  <style>
+    /* CSS: Дизайн стилі */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdfcf5;
+      color: #333;
+    }
+
+    header {
+      background-color: #bdaf85;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .header-content h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #6c4a4a;
+    }
+
+    .header-content p {
+      margin: 10px 0 0;
+    }
+
+    .carousel {
+      background-color: #f4f1e3;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .carousel-container {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      padding: 10px 0;
+    }
+
+    .carousel-item {
+      flex: 0 0 200px;
+      text-align: center;
+    }
+
+    .carousel-item img {
+      max-width: 100%;
+      border-radius: 5px;
+    }
+
+    .genres, .popular-books {
+      padding: 20px;
+    }
+
+    .genre-list {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .genre-list button {
+      padding: 10px 20px;
+      background-color: #6c4a4a;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .genre-list button:hover {
+      background-color: #5b3a3a;
+    }
+
+    .book-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .book-item {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .book-item img {
+      max-width: 100%;
+      border-radius: 5px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>Кітаптар туралы</h1>
+      <p>Қалаған кітаптарды табыңыз және оқыңыз</p>
+    </div>
+  </header>
+  <nav>
+  <center> <a href="index11.html">Басты бет</a> </center>
+  </nav>  
+
+  <main>
+    <section class="carousel">
+      <h2>Ұсынылған кітаптар</h2>
+      <div class="carousel-container">
+        <div class="carousel-item">
+          <img src="https://avatars.mds.yandex.net/i?id=3efbf7dc3f97c257bad17704c3b38235030bc977-12602632-images-thumbs&n=13" alt="Book 1">
+          <p>Қобыланды батыр</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://avatars.mds.yandex.net/i?id=fc45563982cc82de732c4b1824fee20ba843f023-5219488-images-thumbs&n=13" alt="Book 2">
+          <p>Еңлік-Кебек</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://avatars.mds.yandex.net/i?id=1e78a5712db8809f72d89ae5ffb552611213cf03-10814598-images-thumbs&n=13" alt="Book 3">
+          <p>Көшпенділер</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://avatars.mds.yandex.net/i?id=4f29dffe17d5353952986e1043e7ba3283637621-11374488-images-thumbs&n=13" alt="Book 3">
+          <p>Оян Қазақ</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://avatars.mds.yandex.net/i?id=d1f43182fab28df80620720208a99883407c14e8-12463602-images-thumbs&n=13" alt="Book 3">
+          <p>Адасқандар</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://avatars.mds.yandex.net/i?id=dd1eada8b3128ddc88b9759f0eeb0b3792fe3c59-12423122-images-thumbs&n=13" alt="Book 3">
+          <p>Өлім мен Өмір</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://avatars.mds.yandex.net/i?id=365b2dcd16ab2b8363bb153c733f1ea535be5e49-4642926-images-thumbs&n=13" alt="Book 3">
+          <p>Мұнар күн</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://avatars.mds.yandex.net/i?id=1e78a5712db8809f72d89ae5ffb552611213cf03-10814598-images-thumbs&n=13" alt="Book 3">
+          <p>Көшпенділер</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://avatars.mds.yandex.net/i?id=1e78a5712db8809f72d89ae5ffb552611213cf03-10814598-images-thumbs&n=13" alt="Book 3">
+          <p>Көшпенділер</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://avatars.mds.yandex.net/i?id=1e78a5712db8809f72d89ae5ffb552611213cf03-10814598-images-thumbs&n=13" alt="Book 3">
+          <p>Көшпенділер</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://avatars.mds.yandex.net/i?id=1e78a5712db8809f72d89ae5ffb552611213cf03-10814598-images-thumbs&n=13" alt="Book 3">
+          <p>Көшпенділер</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://avatars.mds.yandex.net/i?id=1e78a5712db8809f72d89ae5ffb552611213cf03-10814598-images-thumbs&n=13" alt="Book 3">
+          <p>Көшпенділер</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://avatars.mds.yandex.net/i?id=1e78a5712db8809f72d89ae5ffb552611213cf03-10814598-images-thumbs&n=13" alt="Book 3">
+          <p>Көшпенділер</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://avatars.mds.yandex.net/i?id=1e78a5712db8809f72d89ae5ffb552611213cf03-10814598-images-thumbs&n=13" alt="Book 3">
+          <p>Көшпенділер</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://avatars.mds.yandex.net/i?id=1e78a5712db8809f72d89ae5ffb552611213cf03-10814598-images-thumbs&n=13" alt="Book 3">
+          <p>Көшпенділер</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://avatars.mds.yandex.net/i?id=1e78a5712db8809f72d89ae5ffb552611213cf03-10814598-images-thumbs&n=13" alt="Book 3">
+          <p>Көшпенділер</p>
+        </div>
+        <div class="carousel-item">
+          <img src="https://avatars.mds.yandex.net/i?id=1e78a5712db8809f72d89ae5ffb552611213cf03-10814598-images-thumbs&n=13" alt="Book 3">
+          <p>Көшпенділер</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="genres">
+      <h2>Жанрлар</h2>
+      <div class="genre-list">
+        <button onclick="alert('Поэзия таңдалды!')">Поэзия</button>
+        <button onclick="alert('Проза таңдалды!')">Проза</button>
+        <button onclick="alert('Тарихи романдар таңдалды!')">Тарихи романдар</button>
+        <button onclick="alert('Балалар әдебиеті таңдалды!')">Балалар әдебиеті</button>
+      </div>
+    </section>
+
+    <section class="popular-books">
+      <h2>Танымал кітаптар</h2>
+      <div class="book-grid">
+        <div class="book-item">
+          <img src="https://avatars.mds.yandex.net/i?id=1cfed229b8b9a9afde878d1d6ebd71450aac87b3-13083378-images-thumbs&n=13" alt="Book 4">
+          <h3>Абай жолы</h3>
+          <p>Мұхтар Әуезов</p>
+        </div>
+        <div class="book-item">
+          <img src="https://avatars.mds.yandex.net/i?id=0f2e97847292f5ea80f147da2493d81906c70e6aa06c9286-11476564-images-thumbs&n=13" alt="Book 5">
+          <h3>Менің атым Қожа</h3>
+          <p>Бердібек Соқпақбаев</p>
+        </div>
+        <div class="book-item">
+          <img src="https://avatars.mds.yandex.net/i?id=eed35179a39d2ac5e4fefea22fcb532a13327377-8255596-images-thumbs&n=13" alt="Book 6">
+          <h3>Тәттімбет</h3>
+          <p>Халық жыры</p>
+        </div>
+        <div class="book-item">
+          <img src="https://avatars.mds.yandex.net/i?id=08698720586f04108133ab0054abb5d042ad019d-5239137-images-thumbs&n=13" alt="Book 6">
+          <h3>Ақ қыз</h3>
+          <p>Халық жыры</p>
+        </div>
+        <div class="book-item">
+          <img src="https://avatars.mds.yandex.net/i?id=9bf0730b1fd0946911ecedbfcbc208adc8763a33-5663954-images-thumbs&n=13" alt="Book 6">
+          <h3>Ақ боз үй</h3>
+          <p>Сәбит Мұқанов</p>
+        </div> <div class="book-item">
+          <img src="https://avatars.mds.yandex.net/i?id=504e784201638e500e5aa8b0d4a497218119edc69a9363da-5233169-images-thumbs&n=13" alt="Book 6">
+          <h3>Әңес сарай</h3>
+          <p>Халық жыры</p>
+        </div> <div class="book-item">
+          <img src="https://avatars.mds.yandex.net/i?id=dd1eada8b3128ddc88b9759f0eeb0b3792fe3c59-12423122-images-thumbs&n=13" alt="Book 6">
+          <h3>Өмір мен Өлім</h3>
+          <p>Халық жыры</p>
+        </div> <div class="book-item">
+          <img src="https://avatars.mds.yandex.net/i?id=f45b2f89d613a532af926bd0fa19aad9d7b430fee0ad8ae2-10267836-images-thumbs&n=13" alt="Book 6">
+          <h3>Тағдыр</h3>
+          <p>Қабдеш Жұмаділов</p>
+        </div>
+        <div class="book-item">
+          <img src="https://avatars.mds.yandex.net/i?id=6f7ac041732dc73026bd412612a6232e026b1c7f-5232990-images-thumbs&n=13" alt="Book 6">
+          <h3>Соңғы көш</h3>
+          <p>Халық жыры</p>
+        </div>
+        <div class="book-item">
+          <img src="https://avatars.mds.yandex.net/i?id=71a3a02f5cc5d1fedbaaa50e96ceb5ced8d34eb1-8257715-images-thumbs&n=13" alt="Book 6">
+          <h3>Өмір Мектебі</h3>
+          <p>Халық жыры</p>
+        </div>
+        <div class="book-item">
+          <img src="https://avatars.mds.yandex.net/i?id=7685ba37e47cab469423ffb0a561c733d7eeff0e-5144219-images-thumbs&n=13" alt="Book 6">
+          <h3>Қыз Жібек</h3>
+          <p>Халық жыры</p>
+        </div>
+        <div class="book-item">
+          <img src="https://avatars.mds.yandex.net/i?id=d1f43182fab28df80620720208a99883407c14e8-12463602-images-thumbs&n=13" alt="Book 6">
+          <h3>Адасқандар</h3>
+          <p>Халық жыры</p>
+        </div>
+        <div class="book-item">
+          <img src="https://avatars.mds.yandex.net/i?id=4f29dffe17d5353952986e1043e7ba3283637621-11374488-images-thumbs&n=13" alt="Book 6">
+          <h3>Оян Қазақ</h3>
+          <p>Халық жыры</p>
+        </div>
+        <div class="book-item">
+          <img src="https://avatars.mds.yandex.net/i?id=29fc0873940338bf374e43034ab8641532c83a29-4518693-images-thumbs&n=13" alt="Book 6">
+          <h3>Алпамыс батыр</h3>
+          <p>Халық жыры</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Кітапхана сайты. Барлық құқықтар қорғалған.<br>
+      Байланыс номері: <a href> 87053636894 <br> </a>
+      Біздің почта: <a href> ali_orynbasar@gmail.com </a>
+      
+  </p>
+  </footer>
+
+  <script>
+    // JavaScript: Интерактивті элементтер
+    document.addEventListener("DOMContentLoaded", () => {
+      console.log("Сайт іске қосылды!");
+    });
+  </script>
+</body>
+</html>
